@@ -22,7 +22,8 @@ done
 # Tag the Supervisor how the OS expects it to be tagged
 supervisor=$(docker images --filter "label=io.hass.type=supervisor" --quiet)
 arch=$(docker inspect --format '{{ index .Config.Labels "io.hass.arch" }}' "${supervisor}")
-docker tag "${supervisor}" "ghcr.io/my-smart-homes/${arch}-hassio-supervisor:latest"
+# docker tag "${supervisor}" "ghcr.io/my-smart-homes/${arch}-hassio-supervisor:latest"
+docker tag "${supervisor}" "ghcr.io/home-assistant/${arch}-hassio-supervisor:latest"
 
 # Setup AppArmor
 mkdir -p "/data/supervisor/apparmor"
