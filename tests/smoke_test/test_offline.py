@@ -1,8 +1,9 @@
 import logging
 from time import sleep
 
-# import pytest
-# from labgrid.driver import ExecutionError
+import pytest
+
+from labgrid.driver import ExecutionError
 
 _LOGGER = logging.getLogger(__name__)
 
