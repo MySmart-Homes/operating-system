@@ -4,17 +4,5 @@
     "defconfig": "ova",
     "architecture": "x86-64",
     "label": "board/ova"
-  },
-  {
-    "id": "generic-x86-64",
-    "defconfig": "generic_x86_64",
-    "architecture": "x86-64",
-    "label": "board/generic-x86-64"
-  },
-  {
-    "id": "generic-aarch64",
-    "defconfig": "generic_aarch64",
-    "architecture": "aarch64",
-    "label": "board/generic-aarch64"
   }
 ]
